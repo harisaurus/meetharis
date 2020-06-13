@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Main from "../components/Main";
+import Button from "../components/Button";
 import Talks from "../components/Talks";
 import Footer from "../components/Footer";
 import globalStyles from "../styles/global";
@@ -49,15 +50,17 @@ const HomePage = () => {
 
   if (!main) return "";
 
+  const { content, ctaText, footer } = main;
+
   return (
     <>
       <Head>
         <title>Haris Mahmood</title>
       </Head>
-      <Main content={main.content} />
-      <div>{main.ctaText}</div>
+      <Main content={content} />
+      <Button text={ctaText} />
       <Talks talks={talks} />
-      <Footer text={main.footer} />
+      <Footer text={footer} />
       <style jsx global>
         {globalStyles}
       </style>

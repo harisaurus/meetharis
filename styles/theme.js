@@ -19,6 +19,9 @@ export const THEME = {
   link: PALETTE.grey.primary,
   linkHover: PALETTE.blue.primary,
   footerText: PALETTE.black.L1,
+  buttonBackground: PALETTE.blue.primary,
+  buttonBackgroundHover: PALETTE.black.primary,
+  buttonText: PALETTE.white.primary,
 };
 
 export const BREAKPOINTS = {

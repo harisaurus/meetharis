@@ -11,7 +11,6 @@ const Footer = ({ text }) => (
       }
 
       .text {
-        font-weight: bold;
         color: ${THEME.footerText};
       }
     `}</style>

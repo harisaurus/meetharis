@@ -2,6 +2,15 @@ import css from "styled-jsx/css";
 import { THEME } from "./theme";
 
 export default css.global`
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url("/static/fonts/SFProDisplay-Bold.woff2") format("woff2"),
+      url("/static/fonts/SFProDisplay-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
   *,
   *:before,
   *:after {
@@ -18,6 +27,7 @@ export default css.global`
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-weight: bold;
   }
 
   h1,

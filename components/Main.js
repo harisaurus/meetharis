@@ -25,7 +25,6 @@ const Main = ({ content }) => (
       }
       .main p {
         font-size: 70px;
-        font-weight: bold;
       }
 
       .main p ~ * {

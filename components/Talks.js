@@ -21,7 +21,6 @@ const Talks = ({ talks }) => {
 
         .title {
           font-size: 32px;
-          font-weight: bold;
           margin-bottom: 48px;
         }
 
@@ -34,7 +33,6 @@ const Talks = ({ talks }) => {
         }
 
         .event {
-          font-weight: bold;
           font-size: 0.9rem;
         }
 
@@ -46,7 +44,6 @@ const Talks = ({ talks }) => {
 
         .date {
           font-size: 0.875rem;
-          font-weight: bold;
         }
       `}</style>
     </div>

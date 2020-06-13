@@ -20,3 +20,8 @@ export const THEME = {
   linkHover: PALETTE.blue.primary,
   footerText: PALETTE.black.L1,
 };
+
+export const BREAKPOINTS = {
+  TABLET: "780px",
+  PHONE: "500px",
+};

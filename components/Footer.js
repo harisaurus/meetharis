@@ -1,4 +1,4 @@
-import { THEME } from "../styles/theme";
+import { THEME, BREAKPOINTS } from "../styles/theme";
 
 const Footer = ({ text }) => (
   <div className="footer">
@@ -12,6 +12,12 @@ const Footer = ({ text }) => (
 
       .text {
         color: ${THEME.footerText};
+      }
+
+      @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+        .text {
+          font-size: 0.8rem;
+        }
       }
     `}</style>
   </div>

@@ -1,5 +1,5 @@
 import css from "styled-jsx/css";
-import { THEME } from "./theme";
+import { THEME, BREAKPOINTS } from "./theme";
 
 export default css.global`
   @font-face {
@@ -21,13 +21,19 @@ export default css.global`
     font-size: 16px;
     font-family: "SF Pro Display", sans-serif;
     max-width: 1168px;
-    padding: 0 24px;
+    padding: 0 32px;
     margin: 0 auto;
     color: ${THEME.text};
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: bold;
+  }
+
+  @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+    body {
+      padding: 0 24px;
+    }
   }
 
   h1,

@@ -1,3 +1,5 @@
+import { BREAKPOINTS } from "../styles/theme";
+
 const Talks = ({ talks }) => {
   if (talks.length < 1) return null;
 
@@ -19,9 +21,27 @@ const Talks = ({ talks }) => {
           padding-top: 380px;
         }
 
+        @media screen and (max-width: ${BREAKPOINTS.TABLET}) {
+          .talks {
+            padding-top: 200px;
+          }
+        }
+
+        @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+          .talks {
+            padding-top: 88px;
+          }
+        }
+
         .title {
           font-size: 32px;
           margin-bottom: 48px;
+        }
+
+        @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+          .title {
+            font-size: 24px;
+          }
         }
 
         .talkList {
@@ -36,14 +56,34 @@ const Talks = ({ talks }) => {
           font-size: 0.9rem;
         }
 
+        @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+          .event {
+            font-size: 0.8rem;
+          }
+        }
+
         .name {
           font-size: 1.375rem;
           padding-top: 4px;
           padding-bottom: 16px;
         }
 
+        @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+          .name {
+            font-size: 1.2rem;
+            padding-top: 0;
+            padding-bottom: 4px;
+          }
+        }
+
         .date {
           font-size: 0.875rem;
+        }
+
+        @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+          .date {
+            font-size: 0.7rem;
+          }
         }
       `}</style>
     </div>

@@ -1,6 +1,6 @@
 import { INLINES } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { THEME } from "../styles/theme";
+import { THEME, BREAKPOINTS } from "../styles/theme";
 
 const mainRenderOptions = {
   renderNode: {
@@ -23,12 +23,50 @@ const Main = ({ content }) => (
         padding-top: 200px;
         padding-bottom: 88px;
       }
+
+      @media screen and (max-width: ${BREAKPOINTS.TABLET}) {
+        .main {
+          padding-top: 80px;
+        }
+      }
+
+      @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+        .main {
+          padding-top: 60px;
+          padding-bottom: 48px;
+        }
+      }
+
       .main p {
         font-size: 70px;
       }
 
+      @media screen and (max-width: ${BREAKPOINTS.TABLET}) {
+        .main p {
+          font-size: 55px;
+        }
+      }
+
+      @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+        .main p {
+          font-size: 32px;
+        }
+      }
+
       .main p ~ * {
         margin-top: 70px;
+      }
+
+      @media screen and (max-width: ${BREAKPOINTS.TABLET}) {
+        .main p ~ * {
+          margin-top: 40px;
+        }
+      }
+
+      @media screen and (max-width: ${BREAKPOINTS.PHONE}) {
+        .main p ~ * {
+          margin-top: 28px;
+        }
       }
 
       .mainLink {

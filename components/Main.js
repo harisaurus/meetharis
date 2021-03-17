@@ -7,7 +7,7 @@ const mainRenderOptions = {
     [INLINES.HYPERLINK]: (node) => {
       const { content, data } = node;
       return (
-        <a href={data.uri} target="_blank" className="mainLink">
+        <a href={data.uri} target="_blank" rel="noopener" className="mainLink">
           {content[0].value}
         </a>
       );

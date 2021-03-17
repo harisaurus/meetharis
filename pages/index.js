@@ -55,7 +55,6 @@ const HomePage = () => {
   return (
     <>
       <Head>
-
         <title>Haris Mahmood — Bio</title>
         <meta name="title" content="Haris Mahmood — Bio" />
         <meta name="description" content="Haris is a Toronto-based developer, a YouTuber, and a public speaker." />
@@ -73,7 +72,10 @@ const HomePage = () => {
         <meta property="twitter:image" content="/meta.jpg"/>
 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+        <link rel="shortcut icon" href="/favicon.png" />
       </Head>
+
       <Main content={content} />
       <Button text={ctaText} />
       <Talks talks={talks} />

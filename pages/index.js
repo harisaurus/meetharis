@@ -55,7 +55,24 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Haris Mahmood</title>
+
+        <title>Haris Mahmood — Bio</title>
+        <meta name="title" content="Haris Mahmood — Bio" />
+        <meta name="description" content="Haris is a Toronto-based developer, a YouTuber, and a public speaker." />
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://metatags.io/"/>
+        <meta property="og:title" content="Haris Mahmood — Bio"/>
+        <meta property="og:description" content="Haris is a Toronto-based developer, a YouTuber, and a public speaker."/>
+        <meta property="og:image" content="/meta.jpg"/>
+
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://metatags.io/"/>
+        <meta property="twitter:title" content="Haris Mahmood — Bio"/>
+        <meta property="twitter:description" content="Haris is a Toronto-based developer, a YouTuber, and a public speaker."/>
+        <meta property="twitter:image" content="/meta.jpg"/>
+
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Main content={content} />
       <Button text={ctaText} />

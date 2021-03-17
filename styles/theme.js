@@ -1,6 +1,6 @@
 const PALETTE = {
   black: {
-    L1: "#777",
+    L1: "#525252",
     primary: "#000000",
   },
   grey: {

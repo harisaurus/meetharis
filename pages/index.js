@@ -74,6 +74,20 @@ const HomePage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         <link rel="shortcut icon" href="/favicon.png" />
+
+        <link
+          rel="preload"
+          href="/fonts/SFProDisplay-Bold.woff2"
+          as="font"
+          crossOrigin=""
+        />
+
+        <link
+          rel="preload"
+          href="/fonts/SFProDisplay-Bold.woff"
+          as="font"
+          crossOrigin=""
+        />
       </Head>
 
       <Main content={content} />

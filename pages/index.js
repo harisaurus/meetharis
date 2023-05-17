@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import Nav from "../components/Nav";
 import Main from "../components/Main";
 import Button from "../components/Button";
 import Talks from "../components/Talks";
@@ -90,6 +91,7 @@ const HomePage = () => {
         />
       </Head>
 
+      <Nav/>
       <Main content={content} />
       <Button text={ctaText} />
       <Talks talks={talks} />
